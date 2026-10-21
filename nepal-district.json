@@ -22604,7 +22604,7 @@
           ]
         },
         "properties": {
-          "DISTRICT": "सोलुखुम्वु\r\n",
+          "DISTRICT": "सोलुखुम्वु",
           "TARGET": "SOLUKHUMBU",
           "districtid": 11
         }
@@ -35437,7 +35437,7 @@
           ]
         },
         "properties": {
-          "DISTRICT": "बारा\r\n",
+          "DISTRICT": "बारा",
           "TARGET": "BARA",
           "districtid": 33
         }
@@ -285083,7 +285083,7 @@
           ]
         },
         "properties": {
-          "DISTRICT": "बाँके\r\n",
+          "DISTRICT": "बाँके",
           "TARGET": "BANKE",
           "districtid": 57
         }
@@ -378167,7 +378167,7 @@
           ]
         },
         "properties": {
-          "DISTRICT": "बझाङ\r\n",
+          "DISTRICT": "बझाङ",
           "TARGET": "BAJHANG",
           "districtid": 68
         }

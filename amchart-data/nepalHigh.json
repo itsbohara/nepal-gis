@@ -1267,9 +1267,9 @@
                 ]
             },
             "properties": {
-                "name": "Pradesh 5",
+                "name": "Lumbini",
                 "id": "NP-P5",
-                "NAME_ENG": "Province 5",
+                "NAME_ENG": "Lumbini",
                 "CNTRY": "Nepal",
                 "TYPE": "Province"
             },
@@ -2173,9 +2173,9 @@
                 ]
             },
             "properties": {
-                "name": "Pradesh 2",
+                "name": "Madhesh",
                 "id": "NP-P2",
-                "NAME_ENG": "Province 2",
+                "NAME_ENG": "Madhesh",
                 "CNTRY": "Nepal",
                 "TYPE": "Province"
             },
@@ -3287,9 +3287,9 @@
                 ]
             },
             "properties": {
-                "name": "Pradesh 1",
+                "name": "Koshi",
                 "id": "NP-P1",
-                "NAME_ENG": "Province 1",
+                "NAME_ENG": "Koshi",
                 "CNTRY": "Nepal",
                 "TYPE": "Province"
             },
@@ -4339,7 +4339,7 @@
             "properties": {
                 "name": "Sudurpashchim",
                 "id": "NP-P7",
-                "NAME_ENG": "Province 7",
+                "NAME_ENG": "Sudurpashchim",
                 "CNTRY": "Nepal",
                 "TYPE": "Province"
             },
@@ -7747,9 +7747,9 @@
                 ]
             },
             "properties": {
-                "name": "Pradesh 3",
+                "name": "Bagmati",
                 "id": "NP-P3",
-                "NAME_ENG": "Province 3",
+                "NAME_ENG": "Bagmati",
                 "CNTRY": "Nepal",
                 "TYPE": "Province"
             },

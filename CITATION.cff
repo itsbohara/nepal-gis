@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the commit or release used. Also credit original data sources when established."
+type: dataset
+title: "nepal-gis: Nepal district and province map data"
+authors:
+  - family-names: Bohara
+    given-names: Mahesh
+repository-code: "https://github.com/itsbohara/nepal-gis"
+url: "https://github.com/itsbohara/nepal-gis"
+abstract: "GeoJSON district and province maps of Nepal and an SVG district illustration. Original geometry sources and boundary dates are currently undocumented."
+keywords:
+  - Nepal
+  - GIS
+  - GeoJSON
+  - administrative boundaries
