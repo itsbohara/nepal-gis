@@ -4,6 +4,7 @@
 
 ### Validation
 
+- Run the validator and its tests automatically on pushes, pull requests, and manual workflow runs with Python 3.11 and 3.14; add a workflow status badge to the README.
 - Add a read-only Python validator and pinned Shapely dependency to reproduce geometry diagnostics, including overlap pairs, union holes, ring orientation, and input hashes.
 - Check expected feature counts, required properties, IDs, and dataset/subset consistency; distinguish hard errors from existing coverage warnings.
 - Add synthetic geometry tests for overlapping/touching polygons, holes, malformed coordinates, unclosed rings, and invalid geometry, with documented setup/run commands.

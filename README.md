@@ -1,5 +1,7 @@
 # nepal-gis
 
+[![Validate GIS data](https://github.com/itsbohara/nepal-gis/actions/workflows/validate-data.yml/badge.svg)](https://github.com/itsbohara/nepal-gis/actions/workflows/validate-data.yml)
+
 GeoJSON district and province maps of Nepal, plus an SVG district map. The district datasets contain 77 districts grouped into seven provinces.
 
 ## Choose a file
@@ -88,6 +90,8 @@ python3 -m venv .venv
 ```
 
 Add `--json` for detailed machine-readable diagnostics. Validation checks file structure, geometry, IDs, feature counts, and consistency between district copies and province subsets. It reports existing coverage/orientation issues as warnings and does not change any files. See the [validation details and tests](docs/DATA_SOURCES.md#geometry-diagnostics).
+
+GitHub Actions runs these checks and the validator tests on every push and pull request using Python 3.11 and 3.14. You can also run the workflow manually from the repository's Actions tab. Existing geometry warnings remain visible in the validation logs; malformed or inconsistent data fails the job.
 
 ## Used in research
 
