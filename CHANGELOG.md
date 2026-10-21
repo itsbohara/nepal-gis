@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+### Validation
+
+- Add a read-only Python validator and pinned Shapely dependency to reproduce geometry diagnostics, including overlap pairs, union holes, ring orientation, and input hashes.
+- Check expected feature counts, required properties, IDs, and dataset/subset consistency; distinguish hard errors from existing coverage warnings.
+- Add synthetic geometry tests for overlapping/touching polygons, holes, malformed coordinates, unclosed rings, and invalid geometry, with documented setup/run commands.
+
 ### Data label updates
 
 - In both `amchart-data/nepalHigh.json` and `nepalLow.json`, update `name` and `NAME_ENG` for provinces 1, 2, 3, and 5 to Koshi, Madhesh, Bagmati, and Lumbini respectively. Update province 7's `NAME_ENG` from `Province 7` to `Sudurpashchim`.

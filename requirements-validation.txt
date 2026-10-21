@@ -1,0 +1,2 @@
+# Pinned for reproducible geometry diagnostics. Python 3.11+.
+shapely==2.2.0

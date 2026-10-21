@@ -36,6 +36,21 @@ District spelling variants occur between the repository and this reference. They
 
 ## Geometry diagnostics
 
+Reproduce these measurements from the repository root with Python 3.11 or newer:
+
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-validation.txt
+.venv/bin/python scripts/validate_data.py
+.venv/bin/python -m unittest discover -s tests -v
+```
+
+Use `.venv/bin/python scripts/validate_data.py --json` for full diagnostics on stdout, including input SHA-256 hashes, bounding boxes, overlap pair IDs/areas, union hole areas, ring orientation, and Shapely/GEOS versions. The script reads the 12 existing JSON/GeoJSON files without modifying them. It does not validate the SVG or certify authoritative boundary accuracy.
+
+Exit status is 1 for malformed files, missing required properties, duplicate IDs, invalid/empty polygons, unexpected feature counts, or inconsistencies between dataset copies/subsets. Coverage holes, overlaps, and ring orientation are reported as warnings because the existing data needs review; exit status 0 does not mean these issues are resolved. Areas use the original coordinate plane without reprojection.
+
+The dependency is pinned to Shapely 2.2.0; the measurements below were reproduced with GEOS 3.14.1. The JSON report includes runtime versions because platform-specific GEOS builds can affect floating-point results. The script checks the original ring coordinates before constructing polygons, since GEOS may otherwise close an unclosed ring automatically.
+
 Checks on existing coordinates using Shapely/GEOS found:
 
 - All individual polygons valid and nonempty; all rings closed. IDs are unique within each dataset.

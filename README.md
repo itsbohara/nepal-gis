@@ -77,6 +77,18 @@ An audit found individually valid polygons, but also small district overlaps and
 
 See [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md) for file-level provenance status, geometry diagnostics, and attribution details.
 
+## Validate the data
+
+With Python 3.11 or newer, run from the repository root:
+
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-validation.txt
+.venv/bin/python scripts/validate_data.py
+```
+
+Add `--json` for detailed machine-readable diagnostics. Validation checks file structure, geometry, IDs, feature counts, and consistency between district copies and province subsets. It reports existing coverage/orientation issues as warnings and does not change any files. See the [validation details and tests](docs/DATA_SOURCES.md#geometry-diagnostics).
+
 ## Used in research
 
 Figure 3 of **“Gemykibivirus detection in acute encephalitis patients from Nepal”** (*mSphere*, 2024; DOI: [10.1128/msphere.00219-24](https://doi.org/10.1128/msphere.00219-24)) credits this repository as the source adapted for its Nepal map, under Apache License 2.0.
